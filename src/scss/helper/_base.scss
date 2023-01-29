@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100%;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--2cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5cols {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}

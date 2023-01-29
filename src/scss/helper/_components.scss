@@ -1,0 +1,38 @@
+%btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+
+    &:hover {
+        //
+    }
+
+    &:active {
+        //
+    }
+}
+
+.btn {
+    @extend %btn;
+    //
+}
+
+.btn--small {
+    @extend %btn;
+    //
+}
+
+%link {
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+.link {
+    @extend %link;
+}

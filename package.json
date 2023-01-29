@@ -1,0 +1,29 @@
+{
+    "name": "js-template",
+    "version": "1.0.0",
+    "description": "",
+    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "scripts": {
+        "dev": "parcel index.html --dist-dir src/dist --open",
+        "build": "parcel build index.html --dist-dir src/dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/startercode-dev/js-template.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/startercode-dev/js-template/issues"
+    },
+    "homepage": "https://github.com/startercode-dev/js-template#readme",
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.8.2",
+        "eslint": "^8.30.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "parcel": "^2.8.2",
+        "prettier": "^2.8.1"
+    }
+}
