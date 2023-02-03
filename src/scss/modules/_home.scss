@@ -1,0 +1,124 @@
+@use '../helper' as *;
+
+.home {
+    background-image: url('/src/img/home/background-home-desktop.jpg');
+    @include background-img;
+    justify-content: flex-end;
+    padding-bottom: 12vh;
+}
+
+.hero {
+    padding-left: 5rem;
+    justify-items: center;
+    align-items: end;
+
+    &__description {
+        width: 46rem;
+    }
+
+    .heading5 {
+        margin-bottom: 2.5rem;
+    }
+
+    .heading1 {
+        margin-bottom: 3.5rem;
+    }
+
+    &__cta {
+        background: $color-300;
+        height: 28rem;
+        width: 28rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+
+    &__cta:hover {
+        box-shadow: 0 0 0 9rem #979797b5;
+    }
+
+    &__cta a:link,
+    &__cta a:visited {
+        font-size: $fs-DT-400;
+        color: $color-000;
+        font-weight: 300;
+        font-family: $ff-primary;
+        letter-spacing: 3;
+    }
+
+    //MEDIA QUERY
+    @media (width <= 74rem) {
+        &__description {
+            width: 43rem;
+        }
+    }
+
+    @media (width <= 59rem) {
+        padding: 0;
+        grid-template-columns: 1fr;
+
+        &__description {
+            margin-bottom: 10vh;
+        }
+        .heading5 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .heading1 {
+            margin-bottom: 0.5rem;
+        }
+
+        &__body {
+            text-align: center;
+        }
+    }
+
+    @media (width <= 41rem) {
+        .heading1 {
+            text-align: center;
+        }
+
+        &__secondary {
+            letter-spacing: 3;
+        }
+
+        &__body {
+            width: 32rem;
+            margin-inline: auto;
+        }
+
+        &__description {
+            width: 35rem;
+            margin-bottom: 7vh;
+        }
+
+        &__cta {
+            height: 15rem;
+            width: 15rem;
+        }
+
+        &__cta a:link,
+        &__cta a:visited {
+            font-size: $fs-M-300;
+        }
+    }
+}
+
+@media (width <= 74rem) {
+    .home {
+        padding-bottom: 20vh;
+    }
+}
+@media (width <= 59rem) {
+    .home {
+        background-image: url('/src/img/home/background-home-tablet.jpg');
+        padding-bottom: 10vh;
+    }
+}
+@media (width <= 41rem) {
+    .home {
+        justify-content: center;
+        padding: 0;
+    }
+}

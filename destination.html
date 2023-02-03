@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="src/scss/style.scss" />
+    <script type="module" src="src/js/index.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <title>Space Tourism --- Destination</title>
+  </head>
+  <body class="destination flex--column">
+    <header class="navigation flex--row ls-sm">
+      <div class="logo"><img src="/src/img/shared/logo.svg" alt="logo" /></div>
+      <nav class="nav-menu hide">
+        <ul class="nav-list flex--row nav-text">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span class="fw-bold">00</span><span>HOME</span>
+              <div class="underline"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destination.html">
+              <span class="fw-bold">01</span><span>DESTINATION</span>
+              <div class="underline active"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crew.html">
+              <span class="fw-bold">02</span><span>CREW</span>
+              <div class="underline"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="technology.html">
+              <span class="fw-bold">03</span><span>TECHNOLOGY</span>
+              <div class="underline"></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-icon">
+        <i class="ph-list"></i>
+      </div>
+    </header>
+    <main class="content">
+      <h3 class="content__header | flex--row absolute">
+        <span class="content-number">01</span><span>PICK YOUR DESTINATION</span>
+      </h3>
+      <div class="content__info | grid--2cols">
+        <div class="content-img">
+          <img src="/src/img/destination/image-moon.png" alt="moon" />
+        </div>
+        <div class="content-description | flex--column">
+          <ul class="planet-list | flex--row">
+            <li class="planet-item">
+              <a href="#" class="planet-link active">
+                <span class="link-text">MOON</span>
+                <div class="underline active"></div>
+              </a>
+            </li>
+            <li class="planet-item">
+              <a href="#" class="planet-link">
+                <span class="link-text">MARS</span>
+                <div class="underline"></div>
+              </a>
+            </li>
+            <li class="planet-item">
+              <a href="#" class="planet-link">
+                <span class="link-text">EUROPA</span>
+                <div class="underline"></div>
+              </a>
+            </li>
+            <li class="planet-item">
+              <a href="#" class="planet-link">
+                <span class="link-text">TITAN</span>
+                <div class="underline"></div>
+              </a>
+            </li>
+          </ul>
+          <h2 class="description-primary | heading2">MOON</h2>
+          <p class="description-body | bodyText">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <div class="description-divider"></div>
+          <div class="description-metrics | grid--2cols">
+            <div class="metric-item | flex--column">
+              <p class="metrics-label | subheading2 uppercase">AVG. DISTANCE</p>
+              <p class="metric metric--distance | subheading1">384,400 km</p>
+            </div>
+            <div class="metric-item | flex--column">
+              <p class="metrics-label | subheading2 uppercase">
+                Est. travel time
+              </p>
+              <p class="metric metric--travel | subheading1">3 days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+@use '../helper' as *;
+
+.destination {
+    background-image: url('/src/img/destination/background-destination-desktop.jpg');
+    @include background-img;
+    justify-content: flex-end;
+    padding-bottom: 12vh;
+}
+
+.destination .content {
+    .content-img {
+        padding-top: 5rem;
+        padding-left: 25rem;
+    }
+
+    .content-description {
+        width: 43rem;
+    }
+
+    .planet-list {
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .planet-link.active:link,
+    .planet-link.active:visited {
+        color: $color-300;
+    }
+
+    .planet-link:link,
+    .planet-link:visited {
+        font-family: $ff-secondary;
+        font-size: $fs-DT-100;
+        color: $color-100;
+        letter-spacing: 1.5;
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+
+    .planet-link:hover,
+    .planet-link:active {
+        .underline {
+            background: #979797;
+        }
+    }
+
+    .description-primary {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    .description-body {
+        margin-bottom: 5rem;
+    }
+
+    .description-divider {
+        width: 100%;
+        background: #979797b5;
+        height: 0.1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .metrics-label {
+        margin-bottom: 1rem;
+        letter-spacing: 3;
+    }
+
+    .metric {
+        text-transform: uppercase;
+    }
+
+    @media (width <= 74rem) {
+        .content-img {
+            padding-top: 7rem;
+            padding-left: 12rem;
+            padding-right: 5rem;
+        }
+    }
+
+    @media (width <= 59rem) {
+        .content-img {
+            padding: 3rem 0 3rem 0;
+            width: 30rem;
+        }
+
+        &__info {
+            grid-template-columns: 1fr;
+        }
+
+        .content-description {
+            align-items: center;
+            width: 58rem;
+        }
+
+        .planet-list {
+            width: 30rem;
+            justify-content: space-between;
+        }
+
+        .description-body {
+            text-align: center;
+        }
+
+        .description-metrics {
+            width: 100%;
+            justify-items: center;
+        }
+
+        .metric-item {
+            align-items: center;
+        }
+    }
+
+    @media (width <= 41rem) {
+        .content-img {
+            padding: 1rem 0 1rem 0;
+            width: 17rem;
+        }
+
+        .description-primary {
+            margin-bottom: 0;
+        }
+
+        .link-text {
+            font-size: $fs-M-000;
+        }
+
+        .planet-list {
+            gap: 2rem;
+            width: 24rem;
+            margin-bottom: 2rem;
+        }
+
+        .description-body {
+            width: 32rem;
+            margin-bottom: 3rem;
+            line-height: 1.7;
+        }
+
+        .description-divider {
+            margin-bottom: 3rem;
+        }
+
+        .description-metrics {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        .content-description {
+            width: 32.7rem;
+        }
+
+        .metrics-label {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media (width <= 59rem) {
+    .destination {
+        background-image: url('/src/img/destination/background-destination-tablet.jpg');
+        padding: 9.9rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

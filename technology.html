@@ -17,9 +17,9 @@
     <script type="module" src="src/js/index.js"></script>
     <script src="https://unpkg.com/phosphor-icons"></script>
 
-    <title>Space Tourism --- Home</title>
+    <title>Space Tourism --- Technology</title>
   </head>
-  <body class="home flex--column">
+  <body class="technology flex--column">
     <header class="navigation flex--row ls-sm">
       <div class="logo"><img src="/src/img/shared/logo.svg" alt="logo" /></div>
       <nav class="nav-menu hide">
@@ -27,7 +27,7 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">
               <span class="fw-bold">00</span><span>HOME</span>
-              <div class="underline active"></div>
+              <div class="underline"></div>
             </a>
           </li>
           <li class="nav-item">
@@ -45,7 +45,7 @@
           <li class="nav-item">
             <a class="nav-link" href="technology.html">
               <span class="fw-bold">03</span><span>TECHNOLOGY</span>
-              <div class="underline"></div>
+              <div class="underline active"></div>
             </a>
           </li>
         </ul>
@@ -54,21 +54,41 @@
         <i class="ph-list"></i>
       </div>
     </header>
-    <main class="hero grid--2cols">
-      <div class="hero__description">
-        <p class="hero__secondary | heading5 fw-thin ls-mid">
-          SO, YOU WANT TO TRAVEL TO
-        </p>
-        <h1 class="heading1">SPACE</h1>
-        <p class="hero__body | bodyText">
-          Let’s face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we’ll give you a truly out of this world
-          experience!
-        </p>
-      </div>
-      <div class="hero__cta | br-full flex--center">
-        <a href="destination.html">EXPLORE</a>
+    <main class="content">
+      <h3 class="content__header | flex--row absolute">
+        <span class="content-number">03</span><span>SPACE LAUNCH 101</span>
+      </h3>
+      <div class="content__info | grid--2cols">
+        <div class="content-description flex--row">
+          <ul class="description-list | grid--row">
+            <li class="select-item">
+              <button class="select-btn active" data-index="0">1</button>
+            </li>
+            <li class="select-item">
+              <button class="select-btn" data-index="1">2</button>
+            </li>
+            <li class="select-item">
+              <button class="select-btn" data-index="2">3</button>
+            </li>
+          </ul>
+          <div class="description | flex--column">
+            <p class="pre-header">THE TERMINOLOGY…</p>
+            <h3 class="description-primary | heading3">LAUNCH VEHICLE</h3>
+            <p class="description-body | bodyText">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+        </div>
+        <div class="content-img">
+          <img
+            src="/src/img/technology/image-launch-vehicle-portrait.jpg"
+            alt="launch vehicle"
+          />
+        </div>
       </div>
     </main>
   </body>

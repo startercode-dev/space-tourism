@@ -1,0 +1,132 @@
+@use '../helper' as *;
+
+.navigation {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0 0 5rem;
+
+    .nav-menu {
+        transition: all 0.4s;
+        width: 57%;
+        position: relative;
+        padding: 0rem 12rem;
+        background: #97979715;
+        backdrop-filter: blur(20px);
+    }
+
+    .nav-menu::before {
+        position: absolute;
+        top: 50%;
+        left: -62%;
+        content: '';
+        width: 67%;
+        background: #979797b5;
+        height: 0.1rem;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .nav-link:link,
+    .nav-link:visited {
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        color: #fff;
+        padding: 4rem 0;
+    }
+
+    .nav-link:hover,
+    .nav-link:active {
+        .underline {
+            background: #979797;
+        }
+    }
+
+    .underline {
+        transition: all 0.4s;
+        position: absolute;
+        bottom: 0;
+        height: 0.3rem;
+        width: 100%;
+    }
+
+    .underline.active {
+        background: #fff;
+    }
+
+    //MEDIA QUERY
+    @media (width <= 74rem) {
+        padding: 0 0 0 5rem;
+
+        .nav-menu {
+            width: 50rem;
+            padding: 0rem 5rem;
+        }
+
+        .nav-menu::before {
+            display: none;
+        }
+
+        .nav-link span:nth-child(1) {
+            display: none;
+        }
+
+        .nav-list {
+            justify-content: space-between;
+        }
+    }
+
+    @media (width <= 41rem) {
+        padding-left: 2rem;
+        padding-top: 2rem;
+
+        .logo {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .nav-menu {
+            z-index: 1000;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 66vw;
+            padding: 15rem 5rem 0 5rem;
+        }
+
+        .nav-list {
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .nav-link:link,
+        .nav-link:visited {
+            padding: 0;
+            letter-spacing: 3;
+        }
+
+        .nav-link span:nth-child(1) {
+            display: block;
+        }
+
+        .underline {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+        .nav-menu.hide {
+            opacity: 0;
+            transform: translateX(10rem);
+        }
+    }
+}

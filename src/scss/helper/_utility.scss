@@ -1,0 +1,122 @@
+@use '../helper/variables' as *;
+@use '../helper/mixin' as *;
+
+//DESKTOP TYPOGRAPHY
+@mixin typography($ff, $fs, $color) {
+    font-family: $ff;
+    font-size: $fs;
+    color: $color;
+}
+.heading1 {
+    @include typography($ff-primary, $fs-DT-700, $color-300);
+}
+.heading2 {
+    @include typography($ff-primary, $fs-DT-600, $color-300);
+}
+.heading3 {
+    @include typography($ff-primary, $fs-DT-500, $color-300);
+}
+.heading4 {
+    @include typography($ff-primary, $fs-DT-400, $color-200);
+}
+.heading5 {
+    @include typography($ff-secondary, $fs-DT-300, $color-100);
+}
+.subheading1 {
+    @include typography($ff-primary, $fs-DT-300, $color-300);
+}
+.subheading2 {
+    @include typography($ff-secondary, $fs-DT-000, $color-100);
+}
+.nav-text {
+    @include typography($ff-secondary, $fs-DT-100, $color-300);
+}
+.bodyText {
+    @include typography($ff-body, $fs-DT-200, $color-100);
+    line-height: 2;
+}
+
+//BUTTON
+.br-full {
+    border-radius: 100rem;
+}
+
+//FONT WEIGHT
+.fw-thin {
+    font-weight: 300;
+}
+.fw-bold {
+    font-weight: 700;
+}
+
+//LETTER SPACING
+.ls-sm {
+    letter-spacing: 1.5;
+}
+.ls-mid {
+    letter-spacing: 5;
+}
+
+//MEDIA QUERY
+
+@media (width <= 74rem) {
+    .heading1 {
+        @include typography($ff-primary, $fs-T-700, $color-300);
+    }
+    .heading2 {
+        @include typography($ff-primary, $fs-T-600, $color-300);
+    }
+    .heading3 {
+        @include typography($ff-primary, $fs-T-500, $color-300);
+    }
+    .heading4 {
+        @include typography($ff-primary, $fs-T-400, $color-200);
+    }
+    .heading5 {
+        @include typography($ff-secondary, $fs-T-200, $color-100);
+    }
+    .subheading1 {
+        @include typography($ff-primary, $fs-T-300, $color-300);
+    }
+    .subheading2 {
+        @include typography($ff-secondary, $fs-T-000, $color-100);
+    }
+    .nav-text {
+        @include typography($ff-secondary, $fs-T-100, $color-300);
+    }
+    .bodyText {
+        @include typography($ff-body, $fs-T-100, $color-100);
+        line-height: 2;
+    }
+}
+
+@media (width <= 41rem) {
+    .heading1 {
+        @include typography($ff-primary, $fs-M-700, $color-300);
+    }
+    .heading2 {
+        @include typography($ff-primary, $fs-M-600, $color-300);
+    }
+    .heading3 {
+        @include typography($ff-primary, $fs-M-400, $color-300);
+    }
+    .heading4 {
+        @include typography($ff-primary, $fs-M-200, $color-200);
+    }
+    .heading5 {
+        @include typography($ff-secondary, $fs-M-200, $color-100);
+    }
+    .subheading1 {
+        @include typography($ff-primary, $fs-M-500, $color-300);
+    }
+    .subheading2 {
+        @include typography($ff-secondary, $fs-M-000, $color-100);
+    }
+    .nav-text {
+        @include typography($ff-secondary, $fs-M-200, $color-300);
+    }
+    .bodyText {
+        @include typography($ff-body, $fs-M-100, $color-100);
+        line-height: 2;
+    }
+}

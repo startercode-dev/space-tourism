@@ -1,3 +1,5 @@
+@use '../helper/variables' as *;
+
 *,
 *::before,
 *::after {
@@ -17,7 +19,18 @@ html {
 body {
     min-height: 100%;
     font-weight: 400;
-    font-family: 'Nunito Sans', sans-serif;
+    height: 100vh;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
 }
 
 img,
@@ -26,6 +39,14 @@ svg,
 video {
     display: block;
     max-width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .flex {
@@ -37,8 +58,29 @@ video {
     flex-direction: column;
 }
 
+.flex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex--row {
+    display: flex;
+    flex-direction: row;
+}
+
 .grid {
     display: grid;
+}
+
+.grid--row {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.grid--column {
+    display: grid;
+    grid-auto-flow: column;
 }
 
 .grid--2cols {
@@ -59,4 +101,88 @@ video {
 .grid--5cols {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+//----------------
+//UNIVERSAL ------
+//----------------
+.underline {
+    transition: all 0.4s;
+    position: absolute;
+    bottom: 0;
+    height: 0.3rem;
+    width: 100%;
+}
+.underline.active {
+    background: #fff;
+}
+
+.menu-icon i {
+    font-size: 5rem;
+    color: $color-100;
+    padding-right: 3rem;
+}
+
+.menu-icon {
+    z-index: 100000;
+    display: none;
+}
+
+.content {
+    &__header {
+        white-space: nowrap;
+        top: 20rem;
+        font-family: $ff-secondary;
+        font-size: $fs-DT-300;
+        color: $color-300;
+        letter-spacing: 5;
+        font-weight: 300;
+        gap: 2rem;
+        padding-left: 16rem;
+        margin-bottom: 4rem;
+    }
+
+    &__info {
+        justify-items: center;
+    }
+
+    .content-number {
+        font-weight: 500;
+        color: #97979779;
+    }
+}
+
+//MEDIA QUERY
+
+@media (width <= 74rem) {
+    .content__header {
+        padding-left: 12rem;
+    }
+}
+@media (width <= 59rem) {
+    .content__header {
+        left: 0;
+        top: 12rem;
+        padding-left: 5rem;
+        font-size: 2rem;
+        letter-spacing: 3;
+    }
+}
+
+@media (width <= 41rem) {
+    .content__header {
+        font-size: $fs-M-200;
+        top: 8rem;
+        left: 50%;
+        padding: 0;
+        transform: translateX(-50%);
+    }
+
+    .menu-icon i {
+        font-size: 3rem;
+    }
 }
