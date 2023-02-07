@@ -155,6 +155,28 @@
         .description-body {
             width: 32.7rem;
         }
+        @media (height <= 50rem) {
+            .content-img {
+                padding-top: 9rem;
+            }
+            .content-description {
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+@media (width >= 117rem) {
+    .technology {
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .description-primary {
+            width: 50.4rem;
+        }
     }
 }
 

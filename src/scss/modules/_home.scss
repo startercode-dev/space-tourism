@@ -104,6 +104,26 @@
         }
     }
 }
+@media (width >= 117rem) {
+    .home {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        .hero {
+            width: 192rem;
+        }
+
+        .hero__cta a {
+            font-size: 3.6rem;
+        }
+
+        .hero__cta {
+            height: 35rem;
+            width: 35rem;
+        }
+    }
+}
 
 @media (width <= 74rem) {
     .home {

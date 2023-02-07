@@ -59,6 +59,37 @@
 
 //MEDIA QUERY
 
+@media (width >= 117rem) {
+    .heading1 {
+        @include typography($ff-primary, $fs-DT1-700, $color-300);
+    }
+    .heading2 {
+        @include typography($ff-primary, $fs-DT1-600, $color-300);
+    }
+    .heading3 {
+        @include typography($ff-primary, $fs-DT1-500, $color-300);
+    }
+    .heading4 {
+        @include typography($ff-primary, $fs-DT1-400, $color-200);
+    }
+    .heading5 {
+        @include typography($ff-secondary, $fs-DT1-300, $color-100);
+    }
+    .subheading1 {
+        @include typography($ff-primary, $fs-DT1-300, $color-300);
+    }
+    .subheading2 {
+        @include typography($ff-secondary, $fs-DT1-000, $color-100);
+    }
+    .nav-text {
+        @include typography($ff-secondary, $fs-DT1-100, $color-300);
+    }
+    .bodyText {
+        @include typography($ff-body, $fs-DT1-200, $color-100);
+        line-height: 2;
+    }
+}
+
 @media (width <= 74rem) {
     .heading1 {
         @include typography($ff-primary, $fs-T-700, $color-300);

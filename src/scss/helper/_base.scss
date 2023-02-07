@@ -19,8 +19,10 @@ html {
 body {
     min-height: 100%;
     font-weight: 400;
+    width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 a {
@@ -157,6 +159,17 @@ video {
 }
 
 //MEDIA QUERY
+
+@media (width >= 117rem) {
+    .content__header {
+        left: 50%;
+        transform: translateX(-160%);
+    }
+
+    .content__header span:nth-child(2) {
+        width: 32.9rem;
+    }
+}
 
 @media (width <= 74rem) {
     .content__header {

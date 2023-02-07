@@ -64,6 +64,28 @@
         align-self: end;
     }
 
+    @media (width >= 117rem) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-description {
+            padding-left: 35rem;
+        }
+        .link-text {
+            font-size: $fs-DT1-200;
+        }
+        .content__info {
+            width: 192rem;
+        }
+    }
+
     @media (width <= 74rem) {
         .content-description {
             padding-left: 12rem;
@@ -156,6 +178,15 @@
 
         .description-name {
             margin-bottom: 1.5rem;
+        }
+
+        @media (height<=50rem) {
+            .content-description {
+                padding-top: 2rem;
+            }
+            .slider-dots {
+                margin-bottom: 2rem;
+            }
         }
     }
 }

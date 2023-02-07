@@ -101,6 +101,7 @@
 
         .description-body {
             text-align: center;
+            height: 12.75rem;
         }
 
         .description-metrics {
@@ -155,6 +156,55 @@
         .metrics-label {
             margin-bottom: 2rem;
         }
+
+        @media (height <= 50rem) {
+            .content-img {
+                width: 10rem;
+            }
+
+            .description-primary {
+                font-size: 4.8rem;
+            }
+
+            .metric {
+                font-size: 2rem;
+            }
+
+            .planet-list {
+                width: 20rem;
+                gap: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .description-body {
+                margin-bottom: 2rem;
+            }
+            .description-divider {
+                margin-bottom: 2rem;
+            }
+            .description-metrics {
+                gap: 2rem;
+            }
+            .metrics-label {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (width >= 117rem) {
+    .destination {
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .link-text {
+            font-size: $fs-DT1-200;
+        }
+        .content__info {
+            width: 192rem;
+        }
     }
 }
 
@@ -165,5 +215,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (width <= 41rem) {
+    @media (height <= 50rem) {
+        .destination {
+            padding-top: 7rem;
+        }
     }
 }

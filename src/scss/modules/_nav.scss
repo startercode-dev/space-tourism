@@ -41,8 +41,7 @@
         padding: 4rem 0;
     }
 
-    .nav-link:hover,
-    .nav-link:active {
+    .nav-link:hover {
         .underline {
             background: #979797;
         }
@@ -61,6 +60,11 @@
     }
 
     //MEDIA QUERY
+    @media (width >= 117rem) {
+        .nav-menu {
+            width: 50%;
+        }
+    }
     @media (width <= 74rem) {
         padding: 0 0 0 5rem;
 
@@ -126,7 +130,8 @@
 
         .nav-menu.hide {
             opacity: 0;
-            transform: translateX(10rem);
+            transform: translateX(100%);
+            display: none;
         }
     }
 }

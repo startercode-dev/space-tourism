@@ -2,6 +2,16 @@ import $, { css } from 'jquery';
 import { data } from './data.js';
 
 $(function () {
+    const documentHeight = () => {
+        const doc = document.documentElement;
+        const height =
+            window.innerHeight -
+            ($('.header').height() + $('.footer').height());
+        doc.style.setProperty('--doc-height', `${height}px`);
+    };
+    window.addEventListener('resize', documentHeight);
+    documentHeight();
+
     const tech = $('.technology').length;
 
     const { destinations, crew, technology } = data;
