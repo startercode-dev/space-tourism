@@ -1,12 +1,3 @@
-# JS Template
+# Frontend Mentor - Space Tourism (Mock Landing Page)
 
-Simple Javascript/HTML/SCSS template for getting ideas down on frontend focused projects.
-
-## Get Started
-
-Install all dependencies and get started:
-
-```
-npm i
-npm run dev
-```
+Check it out! [space-tourism.info](https://space-tourism-explore.netlify.app/)
