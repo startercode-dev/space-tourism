@@ -157,10 +157,18 @@
         }
         @media (height <= 50rem) {
             .content-img {
-                padding-top: 9rem;
+                padding-top: 15rem;
             }
             .content-description {
                 gap: 2rem;
+            }
+            .description-primary {
+                margin-bottom: 0.5rem;
+            }
+
+            .select-btn {
+                width: 5rem;
+                height: 5rem;
             }
         }
     }

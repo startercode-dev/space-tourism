@@ -20,7 +20,7 @@ body {
     min-height: 100%;
     font-weight: 400;
     width: 100vw;
-    height: 100vh;
+    height: $docHeight;
     position: relative;
     overflow: hidden;
 }
@@ -189,7 +189,7 @@ video {
 @media (width <= 41rem) {
     .content__header {
         font-size: $fs-M-200;
-        top: 8rem;
+        top: 6rem;
         left: 50%;
         padding: 0;
         transform: translateX(-50%);

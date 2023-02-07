@@ -155,7 +155,8 @@
             padding: 0;
         }
         .content-img img {
-            height: 23rem;
+            height: 20rem;
+            margin-top: 3rem;
         }
 
         .description-body {
@@ -177,7 +178,7 @@
         }
 
         .description-name {
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
         }
 
         @media (height<=50rem) {

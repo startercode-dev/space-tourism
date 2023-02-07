@@ -4,9 +4,7 @@ import { data } from './data.js';
 $(function () {
     const documentHeight = () => {
         const doc = document.documentElement;
-        const height =
-            window.innerHeight -
-            ($('.header').height() + $('.footer').height());
+        const height = window.innerHeight;
         doc.style.setProperty('--doc-height', `${height}px`);
     };
     window.addEventListener('resize', documentHeight);
